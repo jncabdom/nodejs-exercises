@@ -6,11 +6,14 @@ fs.readFile(fileName, 'utf8', (err: Error, data: string) => {
   if (err) {
     console.log(err);
   } else {
-    console.log(data.replace(/\n/g, ' ')
-      .replace(/[&\/\\#,+()$~%.`'":*?<>{}]/g, ' ')
-      .replace(/  +/g, ' ')
-      .trim()
-      .split(' ').length);
+    console.log(getAllWords(data).length);
   }
 });
 
+export const getAllWords = (data: string): string[] => {
+  return data.replace(/\n/g, ' ')
+    .replace(/[&\/\\#,+()$~%.`'":*?<>{}]/g, ' ')
+    .replace(/  +/g, ' ')
+    .trim()
+    .split(' ');
+};
