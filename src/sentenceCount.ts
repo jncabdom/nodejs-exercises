@@ -1,6 +1,6 @@
 const sentence = 'Esta es una frase de prueba, que tiene 11 palabras aaaaaaa';
 
-function wordsCount(): number {
+function wordsCount(sentence: string): number {
   const sentenceArray = sentence.split(' ');
   return sentenceArray.length;
 }
@@ -13,5 +13,5 @@ function asCount(sentence: string): number {
   return 0;
 }
 
-console.log(`The sentence '${sentence}' has ${wordsCount()} words`);
+console.log(`The sentence '${sentence}' has ${wordsCount(sentence)} words`);
 console.log(`The sentence '${sentence}' has ${asCount(sentence)} a's`);
