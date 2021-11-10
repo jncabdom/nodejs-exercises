@@ -6,7 +6,6 @@
   "scripts": {
     "start:prod": "npm run build && node dist/index.js",
     "start": "ts-node src/index.ts",
-    "sentence": "ts-node src/sentenceCount.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "lint": "eslint --max-warnings 0 . --ext .ts"
