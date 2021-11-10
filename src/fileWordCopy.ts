@@ -15,8 +15,7 @@ const writeToFile = (fileName: string, data: string[]): void => {
   fs.writeFile(fileName, data.join('\n'), err => {
     if (err) {
       console.log(err);
-    }
-    else {
+    } else {
       console.log('El resultado se encuentra en result.txt');
     }
   });
