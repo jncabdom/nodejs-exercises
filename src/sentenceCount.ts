@@ -5,7 +5,7 @@ function wordsCount(): number {
   return sentenceArray.length;
 }
 
-function asCount(): number {
+function asCount(sentence: string): number {
   const count = sentence.match(/a/g);
   if (count != null) {
     return count.length;
@@ -15,4 +15,4 @@ function asCount(): number {
 }
 
 console.log(`The sentence '${sentence}' has ${wordsCount()} words`);
-console.log(`The sentence '${sentence}' has ${asCount()} a's`);
+console.log(`The sentence '${sentence}' has ${asCount(sentence)} a's`);
