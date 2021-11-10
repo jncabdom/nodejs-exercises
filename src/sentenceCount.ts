@@ -1,4 +1,4 @@
-const sentence = 'Esta es una frase de prueba, que tiene 10 palabras aaaaaaa';
+const sentence = 'Esta es una frase de prueba, que tiene 11 palabras aaaaaaa';
 
 function wordsCount(): number {
   const sentenceArray = sentence.split(' ');
