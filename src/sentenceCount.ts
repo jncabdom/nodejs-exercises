@@ -9,9 +9,8 @@ function asCount(sentence: string): number {
   const count = sentence.match(/a/g);
   if (count != null) {
     return count.length;
-  } else {
-    return 0;
   }
+  return 0;
 }
 
 console.log(`The sentence '${sentence}' has ${wordsCount()} words`);
